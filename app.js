@@ -18,6 +18,6 @@ app.get("/check",async(req,res,next)=>{
     }
 })
 
-app.listen(PORT,()=>{
+app.listen(8000,()=>{
     console.log(`Listening at ${PORT}`);
 })
