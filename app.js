@@ -5,7 +5,7 @@ const PORT=process.env.PORT || 5600
 
 app.get("/get",async(req,res,next)=>{
     try{
-        res.send({message:"Deployed on AWS successfully and move to /hello path"})
+        res.send(`This is deployed with the help of env file ${process.env.Check}`)
     }catch(err){
         next(err)
     }
@@ -31,6 +31,6 @@ app.get("/",async(req,res,next)=>{
         next(err)
     }
 })
-app.listen(8000,()=>{
+app.listen(PORT,()=>{
     console.log(`Listening at ${PORT}`);
 })
