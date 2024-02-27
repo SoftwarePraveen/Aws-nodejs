@@ -26,7 +26,7 @@ app.get("/hello",async(req,res,next)=>{
 })
 app.get("/",async(req,res,next)=>{
     try{
-        res.send({message:"Hope it will work fine"})
+        res.send({message:"Deployed on AWS successfully and move to /hello path"})
     }catch(err){
         next(err)
     }
